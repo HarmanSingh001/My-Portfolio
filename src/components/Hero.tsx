@@ -4,10 +4,14 @@ import { gradientText, gradientBg, gradientHover } from "../utils/gradients";
 import { fadeInUp, staggerContainer } from "../utils/animations";
 
 export default function Hero() {
+  const handleScroll = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section
       id="hero"
-      className="min-h-screen flex items-center justify-center relative bg-gray-50 dark:bg-gray-900"
+      className="min-h-screen flex items-center justify-center relative bg-gray-50 dark:bg-gray-900 overflow-hidden"
     >
       {/* Gradient Orbs */}
       <motion.div
@@ -87,16 +91,16 @@ export default function Hero() {
             variants={fadeInUp}
           >
             <motion.a
-              href="#projects"
-              className={`px-8 py-3 rounded-full text-white ${gradientBg} ${gradientHover} transition-all duration-300 shadow-lg shadow-purple-500/25`}
+              onClick={() => handleScroll("projects")}
+              className={`px-8 py-3 rounded-full text-white ${gradientBg} ${gradientHover} transition-all duration-300 shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               View My Work
             </motion.a>
             <motion.a
-              href="#contact"
-              className={`px-8 py-3 rounded-full text-white ${gradientBg} ${gradientHover} transition-all duration-300 shadow-lg shadow-purple-500/25`}
+              onClick={() => handleScroll("contact")}
+              className={`px-8 py-3 rounded-full text-white ${gradientBg} ${gradientHover} transition-all duration-300 shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

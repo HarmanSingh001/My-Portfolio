@@ -1,9 +1,9 @@
-import { Mail, MapPin, Send } from 'lucide-react';
-import { useState, useRef } from 'react';
-import emailjs from '@emailjs/browser';
-import { motion } from 'framer-motion';
-import toast, { Toaster } from 'react-hot-toast';
-import { fadeInUp, staggerContainer } from '../utils/animations';
+import { Mail, MapPin, Send } from "lucide-react";
+import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
+import toast, { Toaster } from "react-hot-toast";
+import { fadeInUp, staggerContainer } from "../utils/animations";
 
 export default function Contact() {
   const formRef = useRef<HTMLFormElement>(null);
@@ -16,7 +16,9 @@ export default function Contact() {
 
   if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
     console.error("Missing EmailJS environment variables!");
-    toast.error("Email service configuration is missing. Please contact the site administrator.");
+    toast.error(
+      "Email service configuration is missing. Please contact the site administrator."
+    );
   }
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -43,8 +45,13 @@ export default function Contact() {
 
     try {
       setIsSubmitting(true);
-      await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, PUBLIC_KEY);
-      
+      await emailjs.sendForm(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        formRef.current,
+        PUBLIC_KEY
+      );
+
       toast.success("Message sent successfully!");
       formRef.current.reset();
     } catch (error) {
@@ -56,10 +63,13 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
+    <section
+      id="contact"
+      className="py-20 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800"
+    >
       <Toaster position="top-right" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.h2 
+        <motion.h2
           className="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900 dark:text-white"
           variants={fadeInUp}
           initial="initial"
@@ -68,8 +78,8 @@ export default function Contact() {
         >
           Get In Touch
         </motion.h2>
-        
-        <motion.div 
+
+        <motion.div
           className="grid grid-cols-1 lg:grid-cols-2 gap-12"
           variants={staggerContainer}
           initial="initial"
@@ -82,29 +92,50 @@ export default function Contact() {
               Let's talk about everything!
             </h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Feel free to reach out for collaborations, opportunities, or just a friendly chat.
+              Feel free to reach out for collaborations, opportunities, or just
+              a friendly chat.
             </p>
-            
+
             <div className="space-y-6">
               {/* Email */}
-              <motion.div className="flex items-center space-x-4" whileHover={{ x: 10 }}>
+              <motion.div
+                className="flex items-center space-x-4"
+                whileHover={{ x: 10 }}
+              >
                 <div className="w-12 h-12 bg-indigo-100 dark:bg-indigo-900 rounded-full flex items-center justify-center">
-                  <Mail className="w-6 h-6 text-indigo-600 dark:text-indigo-300" aria-label="Email" />
+                  <Mail
+                    className="w-6 h-6 text-indigo-600 dark:text-indigo-300"
+                    aria-label="Email"
+                  />
                 </div>
                 <div>
-                  <p className="text-sm text-gray-600 dark:text-gray-300">Email</p>
-                  <p className="text-gray-900 dark:text-white font-medium">sardarpreet001@gmail.com</p>
+                  <p className="text-sm text-gray-600 dark:text-gray-300">
+                    Email
+                  </p>
+                  <p className="text-gray-900 dark:text-white font-medium">
+                    sardarpreet001@gmail.com
+                  </p>
                 </div>
               </motion.div>
 
               {/* Location */}
-              <motion.div className="flex items-center space-x-4" whileHover={{ x: 10 }}>
+              <motion.div
+                className="flex items-center space-x-4"
+                whileHover={{ x: 10 }}
+              >
                 <div className="w-12 h-12 bg-indigo-100 dark:bg-indigo-900 rounded-full flex items-center justify-center">
-                  <MapPin className="w-6 h-6 text-indigo-600 dark:text-indigo-300" aria-label="Location" />
+                  <MapPin
+                    className="w-6 h-6 text-indigo-600 dark:text-indigo-300"
+                    aria-label="Location"
+                  />
                 </div>
                 <div>
-                  <p className="text-sm text-gray-600 dark:text-gray-300">Location</p>
-                  <p className="text-gray-900 dark:text-white font-medium">Punjab, India</p>
+                  <p className="text-sm text-gray-600 dark:text-gray-300">
+                    Location
+                  </p>
+                  <p className="text-gray-900 dark:text-white font-medium">
+                    Punjab, India
+                  </p>
                 </div>
               </motion.div>
             </div>
@@ -119,7 +150,10 @@ export default function Contact() {
           >
             {/* Name Field */}
             <div>
-              <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+              <label
+                htmlFor="name"
+                className="block text-sm font-medium text-gray-700 dark:text-gray-300"
+              >
                 Name
               </label>
               <input
@@ -130,10 +164,13 @@ export default function Contact() {
                 className="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-700 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 dark:bg-gray-800 dark:text-white"
               />
             </div>
-            
+
             {/* Email Field */}
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+              <label
+                htmlFor="email"
+                className="block text-sm font-medium text-gray-700 dark:text-gray-300"
+              >
                 Email
               </label>
               <input
@@ -144,10 +181,13 @@ export default function Contact() {
                 className="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-700 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 dark:bg-gray-800 dark:text-white"
               />
             </div>
-            
+
             {/* Message Field */}
             <div>
-              <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+              <label
+                htmlFor="message"
+                className="block text-sm font-medium text-gray-700 dark:text-gray-300"
+              >
                 Message
               </label>
               <textarea
@@ -158,7 +198,7 @@ export default function Contact() {
                 className="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-700 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 dark:bg-gray-800 dark:text-white"
               />
             </div>
-            
+
             {/* Submit Button */}
             <motion.button
               type="submit"

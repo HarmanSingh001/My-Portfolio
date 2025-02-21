@@ -23,23 +23,39 @@ export default function About() {
           viewport={{ once: true }}
         >
           <motion.div
-            className="aspect-square rounded-2xl overflow-hidden"
+            className="aspect-square rounded-2xl overflow-hidden group"
             variants={fadeInUp}
+            whileHover={{ scale: 1.02 }}
+            transition={{ duration: 0.3 }}
           >
             <img
-              src="/harman.png" 
+              src="/harman.png"
               alt="Harmanpreet Singh"
-              className="w-full h-full object-cover rounded-2xl"
+              className="w-full h-full object-cover rounded-2xl group-hover:scale-105 transition-transform duration-300"
             />
           </motion.div>
 
           <motion.div className="space-y-6" variants={staggerContainer}>
-            <motion.p className="text-lg text-gray-600 dark:text-gray-300" variants={fadeInUp}>
-              Hi, I'm Harmanpreet Singh, a passionate **MERN Stack Developer** currently pursuing my Bachelor of Engineering in Computer Science at Chandigarh University. I specialize in building scalable, user-friendly web applications and have hands-on experience in modern web technologies.
+            <motion.p
+              className="text-lg text-gray-600 dark:text-gray-300"
+              variants={fadeInUp}
+            >
+              Hi, I'm Harmanpreet Singh, a passionate and detail-oriented MERN
+              Stack Developer currently pursuing my Bachelor of Engineering in
+              Computer Science at Chandigarh University. I specialize in
+              building scalable, user-friendly web applications that deliver
+              seamless experiences and solve real-world problems.
             </motion.p>
 
-            <motion.p className="text-lg text-gray-600 dark:text-gray-300" variants={fadeInUp}>
-              During my internship at **Stream Infotech**, I optimized web applications, reducing load times by **30%**, and developed secure tools like a **JWT decoder** to enhance data security. I also designed **10+ responsive UI components** using Tailwind CSS, improving user satisfaction across devices.
+            <motion.p
+              className="text-lg text-gray-600 dark:text-gray-300"
+              variants={fadeInUp}
+            >
+              During my internship at Stream Infotech, I optimized web
+              applications, reducing load times by 30%, and developed secure
+              tools like a JWT decoder to enhance data security. I also designed
+              10+ responsive UI components using Tailwind CSS, improving user
+              satisfaction across devices.
             </motion.p>
 
             <motion.div
@@ -47,12 +63,20 @@ export default function About() {
               variants={fadeInUp}
             >
               <div className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
-                <h3 className="font-bold text-xl text-gray-900 dark:text-white">7+</h3>
-                <p className="text-gray-600 dark:text-gray-300">Projects Delivered</p>
+                <h3 className="font-bold text-xl text-gray-900 dark:text-white">
+                  12+
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300">
+                  Projects Delivered
+                </p>
               </div>
               <div className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
-                <h3 className="font-bold text-xl text-gray-900 dark:text-white">250+</h3>
-                <p className="text-gray-600 dark:text-gray-300">LeetCode Problems Solved</p>
+                <h3 className="font-bold text-xl text-gray-900 dark:text-white">
+                  250+
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300">
+                  LeetCode Problems Solved
+                </p>
               </div>
             </motion.div>
           </motion.div>

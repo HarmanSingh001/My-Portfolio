@@ -1,17 +1,19 @@
-import { useState } from 'react';
-import { Github, ExternalLink } from 'lucide-react';
-import { motion } from 'framer-motion';
-import { projectsData } from '../data/projects';
-import ProjectModal from './ProjectModal';
-import type { ProjectItem } from '../types';
+import { useState } from "react";
+import { Github, ExternalLink } from "lucide-react";
+import { motion } from "framer-motion";
+import { projectsData } from "../data/projects";
+import ProjectModal from "./ProjectModal";
+import type { ProjectItem } from "../types";
 
 export default function Projects() {
-  const [selectedProject, setSelectedProject] = useState<ProjectItem | null>(null);
+  const [selectedProject, setSelectedProject] = useState<ProjectItem | null>(
+    null
+  );
 
   return (
     <section id="projects" className="py-20 bg-white dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.h2 
+        <motion.h2
           className="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900 dark:text-white"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -19,15 +21,15 @@ export default function Projects() {
         >
           Featured Projects
         </motion.h2>
-        
-        <motion.div 
+
+        <motion.div
           className="grid grid-cols-1 md:grid-cols-2 gap-8"
           variants={{
             hidden: { opacity: 0 },
             show: {
               opacity: 1,
-              transition: { staggerChildren: 0.2 }
-            }
+              transition: { staggerChildren: 0.2 },
+            },
           }}
           initial="hidden"
           whileInView="show"
@@ -38,7 +40,7 @@ export default function Projects() {
               key={index}
               variants={{
                 hidden: { opacity: 0, y: 20 },
-                show: { opacity: 1, y: 0 }
+                show: { opacity: 1, y: 0 },
               }}
               whileHover={{ y: -8 }}
               onClick={() => setSelectedProject(project)}
@@ -51,11 +53,15 @@ export default function Projects() {
                   className="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-110"
                 />
               </div>
-              
+
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">{project.title}</h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
-                
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                  {project.title}
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  {project.description}
+                </p>
+
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((tech, techIndex) => (
                     <span
@@ -66,7 +72,7 @@ export default function Projects() {
                     </span>
                   ))}
                 </div>
-                
+
                 <div className="flex gap-4">
                   <a
                     href={project.github}

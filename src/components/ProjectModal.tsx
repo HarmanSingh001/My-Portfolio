@@ -1,6 +1,6 @@
-import { motion, AnimatePresence } from 'framer-motion';
-import { X, Github, ExternalLink } from 'lucide-react';
-import { ProjectItem } from '../types';
+import { motion, AnimatePresence } from "framer-motion";
+import { X, Github, ExternalLink } from "lucide-react";
+import { ProjectItem } from "../types";
 
 interface ProjectModalProps {
   project: ProjectItem;
@@ -8,7 +8,11 @@ interface ProjectModalProps {
   onClose: () => void;
 }
 
-export default function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
+export default function ProjectModal({
+  project,
+  isOpen,
+  onClose,
+}: ProjectModalProps) {
   return (
     <AnimatePresence>
       {isOpen && (
@@ -42,8 +46,12 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
             </div>
 
             <div className="p-6">
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">{project.title}</h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                {project.title}
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
+                {project.description}
+              </p>
 
               <div className="flex flex-wrap gap-2 mb-6">
                 {project.tech.map((tech, index) => (
@@ -60,21 +68,31 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
                 <div className="space-y-6">
                   {project.details.problem && (
                     <div>
-                      <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Problem</h4>
-                      <p className="text-gray-600 dark:text-gray-300">{project.details.problem}</p>
+                      <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                        Problem
+                      </h4>
+                      <p className="text-gray-600 dark:text-gray-300">
+                        {project.details.problem}
+                      </p>
                     </div>
                   )}
 
                   {project.details.solution && (
                     <div>
-                      <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Solution</h4>
-                      <p className="text-gray-600 dark:text-gray-300">{project.details.solution}</p>
+                      <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                        Solution
+                      </h4>
+                      <p className="text-gray-600 dark:text-gray-300">
+                        {project.details.solution}
+                      </p>
                     </div>
                   )}
 
                   {project.details.features && (
                     <div>
-                      <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Key Features</h4>
+                      <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                        Key Features
+                      </h4>
                       <ul className="list-disc list-inside space-y-1 text-gray-600 dark:text-gray-300">
                         {project.details.features.map((feature, index) => (
                           <li key={index}>{feature}</li>
@@ -85,8 +103,12 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
 
                   {project.details.impact && (
                     <div>
-                      <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Impact</h4>
-                      <p className="text-gray-600 dark:text-gray-300">{project.details.impact}</p>
+                      <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                        Impact
+                      </h4>
+                      <p className="text-gray-600 dark:text-gray-300">
+                        {project.details.impact}
+                      </p>
                     </div>
                   )}
                 </div>
