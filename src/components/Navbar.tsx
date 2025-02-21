@@ -51,7 +51,7 @@ export default function Navbar({ isDarkMode, toggleTheme }: NavbarProps) {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="https://leetcode.com/your-leetcode-username/" // Replace with your LeetCode profile URL
+                href="https://leetcode.com/u/HarmanSingh_001/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"

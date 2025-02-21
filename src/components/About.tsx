@@ -72,7 +72,7 @@ export default function About() {
               </div>
               <div className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
                 <h3 className="font-bold text-xl text-gray-900 dark:text-white">
-                  250+
+                  280+
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300">
                   LeetCode Problems Solved
