@@ -27,7 +27,7 @@ export default function About() {
             variants={fadeInUp}
           >
             <img
-              src="/public/harman.png" 
+              src="/harman.png" 
               alt="Harmanpreet Singh"
               className="w-full h-full object-cover rounded-2xl"
             />

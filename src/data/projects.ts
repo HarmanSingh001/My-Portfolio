@@ -5,7 +5,7 @@ export const projectsData: ProjectItem[] = [
     title: "Reflct",
     description:
       "A full-stack journaling application designed for seamless documentation, mood tracking, and insightful analytics.",
-    image: "reflect.png",
+    image: "reflct.png",
     tech: ["Next.js", "Tailwind CSS", "PostgreSQL", "ShadCN UI", "ArcJet"],
     github: "https://github.com/HarmanSingh001/Reflct-Journal-App",
     live: "https://getreflct.vercel.app",
@@ -25,7 +25,7 @@ export const projectsData: ProjectItem[] = [
     title: "Welth",
     description:
       "An AI-powered finance management platform for effortless budgeting, expense tracking, and financial insights.",
-    image: "wealth.png",
+    image: "welth.png",
     tech: ["Next.js", "Tailwind CSS", "Gemini AI", "PostgreSQL", "Prisma", "ArcJet"],
     github: "https://github.com/HarmanSingh001/Welth-AI-Finance-Platform",
     live: "https://getwelth.vercel.app",
@@ -65,7 +65,7 @@ export const projectsData: ProjectItem[] = [
     title: "AI Object Detector",
     description:
       "An AI-powered object detection application using TensorFlow and real-time webcam integration.",
-    image: "object-detector.png",
+    image: "objectDetector.png",
     tech: ["Next.js", "Tailwind CSS", "TensorFlow", "COCO-SSD"],
     github: "https://github.com/HarmanSingh001/Object-Detection",
     live: "https://get-object-detection.vercel.app",
@@ -86,7 +86,7 @@ export const projectsData: ProjectItem[] = [
     title: "Zentry",
     description:
       "A visually engaging web app inspired by the Zentry website, featuring dynamic animations and interactivity.",
-    image: "zentry-replica.png",
+    image: "zentry.png",
     tech: ["React", "Tailwind CSS", "GSAP"],
     github: "https://github.com/HarmanSingh001/Zentry-Replica",
     live: "https://getzentry.vercel.app",
@@ -107,7 +107,7 @@ export const projectsData: ProjectItem[] = [
     title: "Password Maker",
     description:
       "A secure and customizable password generator built with React and Vite.",
-    image: "password-maker.png",
+    image: "passwordMaker.png",
     tech: ["React", "Vite", "Tailwind CSS", "JavaScript"],
     github: "https://github.com/HarmanSingh001/Password-Maker",
     live: "https://get-password-random.vercel.app",
