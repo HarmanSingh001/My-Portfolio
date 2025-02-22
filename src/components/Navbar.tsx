@@ -1,4 +1,4 @@
-import { Menu, X, Github, Linkedin, Moon, Sun } from "lucide-react";
+import { Menu, X, Github, Linkedin, Moon, Sun, FileText } from "lucide-react";
 import { useState } from "react";
 
 interface NavbarProps {
@@ -34,6 +34,16 @@ export default function Navbar({ isDarkMode, toggleTheme }: NavbarProps) {
 
             {/* Social Icons */}
             <div className="flex items-center space-x-4">
+              {/* Resume Link */}
+              <a
+                href="myResume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
+              >
+                <FileText className="w-5 h-5" />
+              </a>
+
               <a
                 href="https://github.com/harmansingh001"
                 target="_blank"
@@ -147,6 +157,10 @@ export default function Navbar({ isDarkMode, toggleTheme }: NavbarProps) {
                         <path d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.662-1.823.662s-1.357-.195-1.824-.662l-4.332-4.363c-.467-.467-.702-1.15-.702-1.863s.235-1.357.702-1.824l4.319-4.38c.467-.467 1.125-.645 1.837-.645s1.357.195 1.823.662l2.697 2.606c.514.515 1.365.497 1.9-.038.535-.536.553-1.387.039-1.901l-2.609-2.636a5.055 5.055 0 0 0-2.445-1.337l2.467-2.503c.516-.514.498-1.366-.037-1.901-.535-.535-1.387-.552-1.902-.038l-10.1 10.101c-.981.982-1.494 2.337-1.494 3.835 0 1.498.513 2.895 1.494 3.875l10.1 10.1c.514.514 1.366.497 1.901-.038.535-.535.553-1.387.039-1.901l-2.467-2.503c.757-.164 1.485-.5 2.103-1.117l2.697-2.607c.514-.514.496-1.366-.039-1.901-.535-.535-1.387-.552-1.902-.038z" />
                       </svg>
                     ),
+                  },
+                  {
+                    href: "/path-to-your-resume.pdf", // Replace with the path to your resume
+                    icon: <FileText className="w-5 h-5" />,
                   },
                 ].map(({ href, icon }) => (
                   <a
