@@ -134,7 +134,7 @@ export default function Contact() {
                     Location
                   </p>
                   <p className="text-gray-900 dark:text-white font-medium">
-                    Punjab, India
+                    Chandigarh, India
                   </p>
                 </div>
               </motion.div>
