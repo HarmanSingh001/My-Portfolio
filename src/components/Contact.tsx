@@ -17,7 +17,7 @@ export default function Contact() {
   if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
     console.error("Missing EmailJS environment variables!");
     toast.error(
-      "Email service configuration is missing. Please contact the site administrator."
+      "Email service configuration is incomplete. Please contact the site administrator."
     );
   }
 
@@ -33,7 +33,7 @@ export default function Contact() {
     const message = formData.get("message") as string;
 
     if (!name || !email || !subject || !message) {
-      toast.error("Please fill in all fields.");
+      toast.error("Please fill in all required fields.");
       return;
     }
 
@@ -53,11 +53,11 @@ export default function Contact() {
         PUBLIC_KEY
       );
 
-      toast.success("Message sent successfully!");
+      toast.success("Your message has been sent successfully!");
       formRef.current.reset();
     } catch (error) {
       console.error("EmailJS Error:", error);
-      toast.error("Failed to send message. Please try again.");
+      toast.error("Failed to send your message. Please try again later.");
     } finally {
       setIsSubmitting(false);
     }
@@ -90,7 +90,7 @@ export default function Contact() {
           {/* Contact Information */}
           <motion.div className="space-y-8" variants={fadeInUp}>
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
-              Let's talk about everything!
+              Let’s Connect!
             </h3>
             <p className="text-gray-600 dark:text-gray-300">
               Feel free to reach out for collaborations, opportunities, or just
@@ -162,7 +162,7 @@ export default function Contact() {
                 name="user_name"
                 id="name"
                 required
-                placeholder="Enter your name"
+                placeholder="Your name"
                 className="py-1 mt-1 block w-full rounded-md border-gray-300 dark:border-gray-700 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 dark:bg-gray-800 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 transition-all duration-300 hover:shadow-md"
               />
             </div>
@@ -180,7 +180,7 @@ export default function Contact() {
                 name="user_email"
                 id="email"
                 required
-                placeholder="Enter your email"
+                placeholder="Your email address"
                 className="py-1 mt-1 block w-full rounded-md border-gray-300 dark:border-gray-700 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 dark:bg-gray-800 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 transition-all duration-300 hover:shadow-md"
               />
             </div>
@@ -198,7 +198,7 @@ export default function Contact() {
                 name="subject"
                 id="subject"
                 required
-                placeholder="Enter the subject"
+                placeholder="Subject of your message"
                 className="py-1 mt-1 block w-full rounded-md border-gray-300 dark:border-gray-700 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 dark:bg-gray-800 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 transition-all duration-300 hover:shadow-md"
               />
             </div>
@@ -216,7 +216,7 @@ export default function Contact() {
                 name="message"
                 rows={4}
                 required
-                placeholder="Enter your message"
+                placeholder="Your message"
                 className="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-700 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 dark:bg-gray-800 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 transition-all duration-300 hover:shadow-md"
               />
             </div>

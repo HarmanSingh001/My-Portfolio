@@ -6,7 +6,7 @@ export const timelineData: TimelineItem[] = [
     title: "Higher Secondary Education",
     company: "Golden Senior Secondary School",
     description:
-      "Completed senior secondary education with a strong foundation in science and mathematics, fostering analytical and problem-solving skills.",
+      "Completed senior secondary education with a strong foundation in science and mathematics, building a strong foundation in analytical thinking and problem-solving.",
     icon: "education",
   },
   {
@@ -14,7 +14,7 @@ export const timelineData: TimelineItem[] = [
     title: "Bachelor of Engineering in Computer Science",
     company: "Chandigarh University",
     description:
-      "Pursuing a comprehensive curriculum in computer science with a specialization in full-stack development and artificial intelligence.",
+      "Currently pursuing a degree in Computer Science with a specialization in full-stack development and artificial intelligence, gaining expertise in modern technologies and software engineering principles.",
     icon: "education",
   },
   {
@@ -22,7 +22,7 @@ export const timelineData: TimelineItem[] = [
     title: "Full Stack Developer Intern",
     company: "Stream Infotech",
     description:
-      "Enhanced web application performance by 30% using Svelte, developed a secure JWT decoder tool, and actively participated in agile development workflows.",
+      "Optimized web application performance by 30% using Svelte, developed a secure JWT decoder tool to enhance data security, and contributed to agile development processes.",
     icon: "work",
   },
   {
@@ -30,7 +30,7 @@ export const timelineData: TimelineItem[] = [
     title: "Personal Project Development",
     company: "Self-Initiated",
     description:
-      "Currently working on a personal project focused on AI-driven solutions and advanced web technologies to enhance user experience and automation.",
-    icon: "work", // Changed from "education" to "work" as a suitable alternative
+      "Developing an AI-driven project leveraging advanced web technologies to deliver innovative solutions, improve user experiences, and automate complex workflows.",
+    icon: "work",
   },
 ];

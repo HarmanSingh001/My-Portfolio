@@ -62,7 +62,7 @@ export default function Hero() {
               className="block text-gray-900 dark:text-white opacity-90"
               variants={fadeInUp}
             >
-              Hi, I'm Harmanpreet Singh
+              Hi, I’m Harmanpreet Singh
             </motion.span>
             <motion.span
               className={`block ${gradientText}`}
@@ -74,7 +74,7 @@ export default function Hero() {
               className="block text-gray-900 dark:text-white opacity-90"
               variants={fadeInUp}
             >
-              Building Scalable Web Solutions
+              Crafting Scalable Web Solutions
             </motion.span>
           </motion.h1>
 
@@ -82,8 +82,9 @@ export default function Hero() {
             className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 max-w-3xl mx-auto"
             variants={fadeInUp}
           >
-            Passionate about crafting seamless user experiences and solving
-            complex problems with clean, efficient code.
+            I specialize in building intuitive, high-performance web
+            applications that solve real-world problems and deliver exceptional
+            user experiences.
           </motion.p>
 
           <motion.div
@@ -96,7 +97,7 @@ export default function Hero() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              View My Work
+              Explore My Work
             </motion.a>
             <motion.a
               onClick={() => handleScroll("contact")}
@@ -104,7 +105,7 @@ export default function Hero() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Contact Me
+              Get In Touch
             </motion.a>
           </motion.div>
         </div>

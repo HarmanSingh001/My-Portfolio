@@ -40,22 +40,23 @@ export default function About() {
               className="text-lg text-gray-600 dark:text-gray-300"
               variants={fadeInUp}
             >
-              Hi, I'm Harmanpreet Singh, a passionate and detail-oriented MERN
-              Stack Developer currently pursuing my Bachelor of Engineering in
-              Computer Science at Chandigarh University. I specialize in
-              building scalable, user-friendly web applications that deliver
-              seamless experiences and solve real-world problems.
+              I’m Harmanpreet Singh, a passionate and results-oriented MERN
+              Stack Developer pursuing a Bachelor of Engineering in Computer
+              Science at Chandigarh University. I specialize in building
+              scalable and efficient web applications that solve real-world
+              problems while ensuring seamless user experiences.
             </motion.p>
 
             <motion.p
               className="text-lg text-gray-600 dark:text-gray-300"
               variants={fadeInUp}
             >
-              During my internship at Stream Infotech, I optimized web
-              applications, reducing load times by 30%, and developed secure
-              tools like a JWT decoder to enhance data security. I also designed
-              10+ responsive UI components using Tailwind CSS, improving user
-              satisfaction across devices.
+              During my tenure at Stream Infotech, I played a key role in
+              optimizing web applications, reducing load times by 30%, and
+              enhancing security by developing a robust JWT decoder tool.
+              Additionally, I contributed to UI/UX improvements by designing and
+              implementing 10+ responsive UI components using Tailwind CSS,
+              leading to a significant boost in user engagement.
             </motion.p>
 
             <motion.div
@@ -67,7 +68,7 @@ export default function About() {
                   12+
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300">
-                  Projects Delivered
+                  Projects Completed
                 </p>
               </div>
               <div className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
@@ -75,7 +76,7 @@ export default function About() {
                   280+
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300">
-                  LeetCode Problems Solved
+                  LeetCode Solutions
                 </p>
               </div>
             </motion.div>
