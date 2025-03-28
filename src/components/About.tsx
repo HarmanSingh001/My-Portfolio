@@ -29,7 +29,7 @@ export default function About() {
             transition={{ duration: 0.3 }}
           >
             <img
-              src="/harman.png"
+              src="/image.png"
               alt="Harmanpreet Singh"
               className="w-full h-full object-cover rounded-2xl group-hover:scale-105 transition-transform duration-300"
             />
