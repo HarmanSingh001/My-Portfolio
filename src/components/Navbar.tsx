@@ -36,7 +36,7 @@ export default function Navbar({ isDarkMode, toggleTheme }: NavbarProps) {
             <div className="flex items-center space-x-4">
               {/* Resume Link */}
               <a
-                href="https://drive.google.com/file/d/16uPzmLahIfItuktqelWc_Ejbsyqzz6E5/view?usp=share_link"
+                href="https://drive.google.com/file/d/1yVqviDbM8KP9KiH6PlmUpBUzcZBn12db/view?usp=share_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
