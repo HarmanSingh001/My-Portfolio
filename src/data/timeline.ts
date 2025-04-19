@@ -22,7 +22,7 @@ export const timelineData: TimelineItem[] = [
     title: "Full Stack Developer Intern",
     company: "Stream Infotech",
     description:
-      "Optimized web application performance by 30% using Svelte, developed a secure JWT decoder tool to enhance data security, and contributed to agile development processes.",
+      "I worked in a SCRUM-based environment and contributed to 7+ projects. My role involved implementing secure JWT authentication, designing responsive UI components, and optimizing backend APIs for performance and scalability.",
     icon: "work",
   },
   {

@@ -40,23 +40,26 @@ export default function About() {
               className="text-lg text-gray-600 dark:text-gray-300"
               variants={fadeInUp}
             >
-              I’m Harmanpreet Singh, a passionate and results-oriented MERN
-              Stack Developer pursuing a Bachelor of Engineering in Computer
-              Science at Chandigarh University. I specialize in building
-              scalable and efficient web applications that solve real-world
-              problems while ensuring seamless user experiences.
+              I’m Harmanpreet Singh, a MERN Stack Developer currently pursuing a
+              Bachelor of Engineering in Computer Science at Chandigarh
+              University. I’m passionate about building scalable, secure, and
+              user-focused web applications that deliver real-world impact. I
+              also completed a Full Stack Developer internship at Stream
+              Infotech, where I worked in a SCRUM-based environment and
+              contributed to over 7 projects. My responsibilities included
+              implementing secure JWT authentication, designing responsive UI
+              components, and optimizing backend APIs for performance.
             </motion.p>
 
             <motion.p
               className="text-lg text-gray-600 dark:text-gray-300"
               variants={fadeInUp}
             >
-              During my tenure at Stream Infotech, I played a key role in
-              optimizing web applications, reducing load times by 30%, and
-              enhancing security by developing a robust JWT decoder tool.
-              Additionally, I contributed to UI/UX improvements by designing and
-              implementing 10+ responsive UI components using Tailwind CSS,
-              leading to a significant boost in user engagement.
+              Beyond development, I’ve solved over 280 problems on LeetCode to
+              strengthen my DSA skills. I’ve also contributed to multiple
+              research papers. When I’m not coding, I enjoy reading tech blogs
+              and exploring new frameworks. I believe in continuous learning,
+              meaningful collaboration, and writing clean, purposeful code.
             </motion.p>
 
             <motion.div
@@ -76,7 +79,7 @@ export default function About() {
                   280+
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300">
-                  LeetCode Solutions
+                  LeetCode Problems Solved
                 </p>
               </div>
             </motion.div>
